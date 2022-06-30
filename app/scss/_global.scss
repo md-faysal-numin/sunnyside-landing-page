@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+    // margin: 0;
+
+}
+
+
+*::after,*::before{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: $font-first;
+    font-size: 1.125rem;
+    // background-color: rgb(94, 88, 88);
+}
+
+img{
+    // display: block;
+    max-width: 100%;
+    // object-fit: cover;
+}
+h1,h2,h3{
+    line-height: 1;
+    margin: 0;
+}
+p{
+    line-height: 1.5;
+}
+a{
+    text-decoration: none;
+}
+
+.hide-for-mobile{
+    @include breakpoint-down(medium)
+    {
+        display: none;
+    }
+}
+.hide-for-desktop{
+    @include breakpoint-up(large)
+    {
+        display: none;
+    }
+}

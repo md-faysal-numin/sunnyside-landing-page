@@ -1,0 +1,76 @@
+.testimonials{
+    text-align: center;
+    padding: 8rem 6rem;
+    min-height: 60vh;
+    @include breakpoint-down(medium){
+        padding: 8rem 1rem;
+    }
+
+    h3{
+        font-family: $font-second;
+        text-transform: uppercase;
+      margin: 5rem 0;
+      letter-spacing: 5px;
+      color: $grayishBlue;
+
+      font-size: $font-mlg;
+      @include breakpoint-down(small){
+        font-size:$font-med;
+      }
+    }
+    &__list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include breakpoint-down(medium){
+            flex-direction: column;
+        }
+        // outline: 1px solid red;
+
+        & > *{
+            flex-grow: 1;
+            // outline: 1px solid blue;
+        }
+
+    }
+    .testimonial{
+        padding: 3rem;
+        // outline: 1px solid red;
+        @include breakpoint-down(small)
+        {
+            padding: 1rem;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__img{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            // outline: 1px solid blue;
+            overflow: hidden;
+            text-align: center;
+        }
+        p{
+            margin: 4rem 0;
+            color: $veryDarkGrayishBlue;
+        }
+
+        &__details{
+            display: flex;
+            flex-direction: column;
+            strong{
+                font-family: $font-second;
+                font-weight: 700;
+                font-size: $font-lg;
+                color: $veryDarkDesaturatedBlue;
+            }
+            small{
+                color: $grayishBlue;
+                margin: 1rem 0;
+            }
+        }
+    }
+}

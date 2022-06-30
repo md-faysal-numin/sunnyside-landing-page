@@ -1,0 +1,38 @@
+.hero{
+ 
+        position: absolute;
+        // outline: 1px solid red;
+        z-index: 1;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+
+
+    
+    &__title
+    {
+        font-family: $font-second;
+        letter-spacing: 6px;
+        font-size: $font-xlg;
+        color: $white;
+        // overflow: hidden;
+
+        font-weight: bold;
+        @include breakpoint-down(medium)
+        {
+            font-size: $font-lg;
+            // z-index: 1;
+        }
+}
+
+&__arrow{
+    margin-top: 2rem;
+    // outline: 1px solid red;
+    @include breakpoint-down(medium)
+    {
+       height: 70px;
+    }
+}
+
+}

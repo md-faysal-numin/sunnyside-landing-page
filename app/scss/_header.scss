@@ -1,0 +1,129 @@
+.header{
+    position: relative;
+    height: 80vh;
+    // outline: 1px solid red;
+    // margin-top: -1rem;
+    // margin: 0;
+    @include breakpoint-down(medium){
+        height: 60vh;
+    }
+
+    &::after{
+        content: '';
+        background: url('../../images/desktop/image-header.jpg');
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+
+    .nav{
+        // position: -webkit-sticky;
+        position: sticky ;
+        z-index: 100;
+       top: 1rem;
+    //    left: 1rem;
+    //    right: 1rem ;
+    margin: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__items.nav__toggle{
+            display: flex;
+            transform: translateX(-50%) scale(1);
+        }
+
+        &__items{
+            margin: 0;
+            padding: 1rem 0;
+            display: flex;
+           list-style-type: none;
+           align-items: center;
+           transition: transform 0.3s ease-in-out;
+
+          
+           @include breakpoint-down(medium)
+           {
+            // display: none;
+            flex-direction: column;
+            justify-content: center;
+            
+            position: absolute;
+            z-index: 3;
+            width: 340px;
+            background-color: $white;
+            // height: 0px;
+            top: 5rem;
+            left: 50%;
+            transform: translate(-50%,-50%) scale(0);
+
+            text-align: center;
+            // border-top: 1rem solid red;
+            // &::after{
+            //     content: '';
+            //     position: absolute;
+            //     background-color:#3cbdfe;
+            //     background-color:red;
+            //     width: 98%;
+            //     height: 20px;
+            //     top: 0;
+            //     left: 0;
+            //    }
+
+           }
+
+
+
+        }
+        &__item{
+
+            margin-left:2rem ;
+            @include breakpoint-down(medium){
+                margin-left: 0;
+                display: block;
+                margin: 1rem 0;
+            }
+        }
+
+        &__link{
+            text-decoration: none;
+            color: $white;
+
+            @include breakpoint-down(medium){
+                color: $darkGrayishBlue;
+            }
+
+        }
+        &__contact{
+            color: black;
+            text-transform: uppercase;
+            font-family: $font-second;
+            padding: 0.7rem 0.9rem;
+            border-radius: 50px;
+            font-size: $font-sm;
+            background-color: white;
+
+            &:hover{
+                background-color:rgba(255,255,255,0.5);
+                color: $white;
+                @include breakpoint-down(medium){
+                    background-color:black;
+                }
+            }
+            @include breakpoint-down(medium){
+                background-color: $yellow;
+                // font-size: $font-sm;
+
+            }
+
+        }
+
+
+        &__hamburger{
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,146 @@
+
+
+.content{
+    display: flex;
+    overflow: hidden;
+    // flex-wrap: wrap;
+    // width: 100%;
+    margin: 0;
+    &__img img{
+        display: block;
+            width: 100%;
+    }
+    @include breakpoint-down(medium)
+    {
+        flex-wrap: wrap;
+    }
+
+    & > *{
+        width: 50vw;
+        @include breakpoint-down(medium)
+        {
+                width: 100vw;
+        }
+    }
+
+    &__box{
+        
+        font-family: $font-second;
+        display:grid;
+        place-items: center;
+        color: $veryDarkDesaturatedBlue;
+
+  @include breakpoint-down(medium)
+        {
+                text-align: center;
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+        }
+
+    }
+    &__text{
+        // outline: 1px solid red;
+        width: 70%;
+        // margin: 0 auto;
+
+        & h2{
+            font-size: $font-xlg;
+        }
+        & p{
+            font-family: $font-first;
+            color:$darkGrayishBlue ;
+        }
+
+    }
+    &__btn{
+        border: 0;
+        background-color: transparent;
+        font-family: inherit;
+        font-size: $font-lg;
+        position: relative;
+        text-transform: uppercase;
+        // outline: 1px solid red;
+        cursor: pointer;
+
+        &:after{
+            content: '';
+            width: 135px;
+            height: 5px;
+            border-radius: 50px;
+            background-color: hsl(51, 100%, 80%);
+            position: absolute;
+            bottom: 3px;
+            left: -5px;
+            z-index: -1;
+            
+        }
+        &:hover{
+            &:after
+            {
+            background-color:  hsl(51, 100%, 49%);
+         }
+        }
+    }
+    &__btn2{
+        &:after{
+            background-color: hsl(7, 99%, 90%);
+        }
+        &:hover{
+            &:after
+            {
+            background-color:  hsl(7, 99%, 70%);
+         }
+        }
+    }
+
+    &__first{
+        @include breakpoint-down(medium){
+            order: 2;
+        }    
+    }
+
+
+    &__three{
+        background-image: url('../../images/desktop/image-graphic-design.jpg') ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+        min-height:80vh ;
+        position: relative;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        font-family: $font-second;
+        &__text{
+            width: 50%;
+            position: absolute;
+            bottom: 2rem;
+             @include breakpoint-down(small){
+                width: 80%;
+             }
+        }
+
+        h3{
+            font-size: $font-mlg;
+            // @include breakpoint-down(small)
+            // {
+            //     font-size: $font-lg;
+            // }
+        }
+        p{
+            font-family: $font-first;
+        }
+    }
+    &__graphic{
+        color: $graphicDesignText;
+    }
+
+    &__photography{
+        background-image: url('../../images/desktop/image-photography.jpg') ;
+        color: $photographyText;
+
+    }
+
+
+}
+

@@ -1,0 +1,18 @@
+.gallery{
+    display: flex;
+    @include breakpoint-down(medium)
+    {
+        flex-wrap: wrap;
+    }
+
+
+    & > *{
+        @include breakpoint-down(medium)
+        {
+            width: 50%;
+        }
+       img{
+        display: block;
+       }
+    }
+}
