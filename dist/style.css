@@ -59,7 +59,7 @@ a {
 
 .header::after {
   content: '';
-  background: url("../../images/desktop/image-header.jpg");
+  background: url("../images/desktop/image-header.jpg");
   position: absolute;
   inset: 0;
   z-index: -1;
@@ -320,7 +320,7 @@ a {
 }
 
 .content__three {
-  background-image: url("../../images/desktop/image-graphic-design.jpg");
+  background-image: url("../images/desktop/image-graphic-design.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
@@ -358,7 +358,7 @@ a {
 }
 
 .content__photography {
-  background-image: url("../../images/desktop/image-photography.jpg");
+  background-image: url("../images/desktop/image-photography.jpg");
   color: #19536b;
 }
 

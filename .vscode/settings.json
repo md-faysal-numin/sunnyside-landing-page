@@ -1,0 +1,40 @@
+{
+    "python.defaultInterpreterPath": "C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.triggerExpansionOnTab": true,
+    "editor.mouseWheelZoom": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "files.associations": {
+        "*.html": "html"
+    },
+    "liveServer.settings.CustomBrowser": "firefox",
+    "explorer.confirmDragAndDrop": false,
+    "liveSassCompile.settings.formats": [
+    
+
+
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/dist",
+            
+        }
+    ],
+    "liveSassCompile.settings.generateMap": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Community Material Theme Palenight High Contrast",
+    "explorer.confirmDelete": false,
+    "liveServer.settings.donotVerifyTags": true,
+    "workbench.editor.untitled.hint": "hidden",
+    "security.workspace.trust.untrustedFiles": "open",
+    "bracketPairColorizer.depreciation-notice": false,
+    "liveSassCompile.settings.excludeList": [
+        
+        
+
+
+        "**/node_modules/**",
+        ".vscode/**"
+    ],
+    
+}
